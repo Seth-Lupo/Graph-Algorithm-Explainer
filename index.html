@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="utf-8">
+		<title>Index</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="styles.css">
+
+	</head>
+
+		<div id="mainDiv">
+			
+			<h1 id="titleHeader">The Traveling Salesperson Problem</h1>
+			<h2 id="subtitleHeader">An Interactive Simulation</h1>
+			<h2 id="authorHeader">By Seth Lupo</h5>
+
+			<p class="contentPara"><i>*This is a modified version of the TSP problem. Here, the sale's person's route can revisit nodes and edges. Also, the sales person does not need to visit every node, only specified nodes (houses). More formally, we are finding the <b>closed walk that contains all specified vertices of least cost,</b> not the Hamiltonian cycle of least cost. Though this is more difficult to solve, as it requires a specific preemptive steps, I find it to be more interesting and useful. I will explain the differences in full in the article.*</i></p>
+		
+			<pre>
+				<code>
+				</code>
+			</pre>
+
+			<p class="contentPara">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+			<div id="simulationDiv">
+				
+
+				<div id="canvasDiv"></div>
+				<div id="outputDiv">
+					
+					<samp id="output">Press "Start Sim" when ready! :D</samp>
+
+				</div>
+
+				<div id="controlsDiv">
+					
+					<div id="controlsButtonDiv">
+						<button id="startButton" class="btn btn-outline-success simulationButtons">Start<br>Sim</button>
+						<button id="endButton" class="simulationButtons btn btn-outline-warning" disabled>Pause<br>Sim</button>
+						<button id="clearButton" class="simulationButtons btn btn-outline-danger">Reset<br>Map</button>
+					</div>
+
+					<div id="controlsCheckboxDiv">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="processingCheckbox" checked>
+							<label class="form-check-label simulationCheckboxLabels" for="flexCheckDefault">
+								Animate Calc
+							</label>
+						</div>
+
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="drivingCheckbox" checked>
+							<label class="form-check-label simulationCheckboxLabels" for="flexCheckChecked">
+								Animate Drive
+							</label>
+						</div>
+
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="soundCheckbox">
+							<label class="form-check-label simulationCheckboxLabels" for="flexCheckChecked">
+								Show Nums
+							</label>
+						</div>
+
+
+
+					</div>
+
+					<div id="controlsRangeDiv">
+						<label for="customRange1" class="form-label"><i>Animation Speed</i></label>
+						<input type="range" value="85" id="speedRange"></div>
+					</div>
+
+
+				</div>
+
+
+			<p class="contentPara">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+			<p class="contentPara">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+		</div>
+
+	<body>
+
+
+
+	</body>
+
+	<footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="main.js"></script>
+		<script type="text/javascript" src="ui.js"></script>
+		<script type="text/javascript" src="sim.js"></script>
+
+
+
+	</footer>
+
+</html>
